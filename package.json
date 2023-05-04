@@ -9,7 +9,7 @@
     ]
   },
   "scripts": {
-    "dev-start": "concurrently \"npx nodemon index.js\" \"cd client && npm start\"",
+    "dev-start": "concurrently \"npx nodemon index.js\" ",
     "start": "set NODE_ENV=production && node index.js",
     "docs": "apidoc -i routes -o doc",
     "install-client": "cd client && npm install",
@@ -18,11 +18,9 @@
   "author": "Energia IT Team",
   "license": "ISC",
   "dependencies": {
-    "apidoc": "^0.51.1",
     "axios": "^0.21.4",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.6.1",
     "fcm-node": "^1.6.1",
@@ -31,7 +29,6 @@
     "joi": "^17.3.0",
     "joi-password-complexity": "^4.2.1",
     "jsonwebtoken": "^8.5.1",
-    "lint-staged": "^10.5.1",
     "lodash": "^4.17.21",
     "mongoose": "^5.10.15",
     "morgan": "^1.10.0",
@@ -44,6 +41,9 @@
     }
   },
   "devDependencies": {
+    "apidoc": "^0.51.1",
+    "dotenv": "^8.2.0",
+    "lint-staged": "^10.5.1",
     "concurrently": "^7.0.0",
     "nodemon": "^2.0.15"
   }
