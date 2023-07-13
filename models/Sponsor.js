@@ -13,6 +13,10 @@ const sponsorSchema = new mongoose.Schema({
     type: Boolean,
     required: true,
   },
+  link: {
+    type: String,
+    required: false,
+  },
 });
 
 module.exports = mongoose.model("Sponsor", sponsorSchema);
